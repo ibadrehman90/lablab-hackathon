@@ -15,7 +15,7 @@
         if (command.value !== '') {
             isMetaMD.value = true
         overlay.value = true
-        await fetch('http://127.0.0.1:5000/commands/content', {
+        await fetch('https://hackathon-lablab.herokuapp.com/commands/content', {
         method: 'POST',
         body: JSON.stringify({
             prompt: prompt.value,

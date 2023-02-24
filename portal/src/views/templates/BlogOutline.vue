@@ -19,7 +19,7 @@ async function generateIntro(){
     }
     if (title.value && audience.value !== '') {
       overlay.value = true
-      await fetch('http://127.0.0.1:5000/article/outline', {
+      await fetch('https://hackathon-lablab.herokuapp.com/article/outline', {
       method: 'POST',
       body: JSON.stringify({
         title: title.value,

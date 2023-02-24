@@ -5,8 +5,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '',
     name: 'dashboard',
-    component: DashboardPage,
-    meta:{auth:true}
+    component: DashboardPage
   },
   {
     path: '/login',
@@ -24,55 +23,55 @@ const routes: Array<RouteRecordRaw> = [
     path: '/profile',
     name: 'settings',
     component: () => import('../views/SettingsPage.vue'),
-    meta:{auth:true,hideNavbar: false}
+    meta:{hideNavbar: false}
   },
   {
     path: '/templates',
     name: 'templates',
     component: () => import('../views/templates/_list.vue'),
-    meta:{auth:true,hideNavbar: false}
+    meta:{hideNavbar: false}
   },
   {
     path: '/templates/blogpost',
     name: 'blogpost',
     component: () => import('../views/templates/BlogPost.vue'),
-    meta:{auth:true,hideNavbar: false,hideTopbar: true}
+    meta:{hideNavbar: false,hideTopbar: true}
   },
   {
     path: '/templates/textblob',
     name: 'textblob',
     component: () => import('../views/templates/TextBlob.vue'),
-    meta:{auth:true,hideNavbar: false,hideTopbar: true}
+    meta:{hideNavbar: false,hideTopbar: true}
   },
   {
     path: '/templates/commands',
     name: 'commands',
     component: () => import('../views/templates/CommandsPage.vue'),
-    meta:{auth:true,hideNavbar: false,hideTopbar: true}
+    meta:{hideNavbar: false,hideTopbar: true}
   },
   {
     path: '/templates/text-improver',
     name: 'textimprover',
     component: () => import('../views/templates/TextImprover.vue'),
-    meta:{auth:true,hideNavbar: false,hideTopbar: true}
+    meta:{hideNavbar: false,hideTopbar: true}
   },
   {
     path: '/templates/blog-outline',
     name: 'blogoutline',
     component: () => import('../views/templates/BlogOutline.vue'),
-    meta:{auth:true,hideNavbar: false,hideTopbar: true}
+    meta:{hideNavbar: false,hideTopbar: true}
   },
   {
     path: '/templates/cold-email',
     name: 'coldemail',
     component: () => import('../views/templates/ColdEmail.vue'),
-    meta:{auth:true,hideNavbar: false,hideTopbar: true}
+    meta:{hideNavbar: false,hideTopbar: true}
   },
   {
     path: '/feedback',
     name: 'feedback',
     component: () => import('../views/FeedBack.vue'),
-    meta:{auth:true,hideNavbar: false,hideTopbar: false}
+    meta:{hideNavbar: false,hideTopbar: false}
   }
 ]
 

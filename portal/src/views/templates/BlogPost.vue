@@ -27,7 +27,7 @@ import { ref } from "vue";
       var start = textarea.selectionStart;
       var end = textarea.selectionEnd;
       var sel = textarea.value.substring(start, end);
-      await fetch('http://127.0.0.1:5000/blogpost/intro', {
+      await fetch('https://hackathon-lablab.herokuapp.com/blogpost/intro', {
       method: 'POST',
       body: JSON.stringify({
           title:title.value,
@@ -58,7 +58,7 @@ import { ref } from "vue";
   }
 
   async function generateOutline(){
-    await fetch('http://127.0.0.1:5000/blogpost/outline', {
+    await fetch('https://hackathon-lablab.herokuapp.com/blogpost/outline', {
     method: 'POST',
     body: JSON.stringify({
         title:title.value
@@ -85,7 +85,7 @@ import { ref } from "vue";
     var start = textarea.selectionStart;
     var end = textarea.selectionEnd;
     var sel = textarea.value.substring(start, end);
-    await fetch('http://127.0.0.1:5000/blogpost/body', {
+    await fetch('https://hackathon-lablab.herokuapp.com/blogpost/body', {
     method: 'POST',
     body: JSON.stringify({
         title:title.value,
@@ -115,7 +115,7 @@ import { ref } from "vue";
     var start = textarea.selectionStart;
     var end = textarea.selectionEnd;
     var sel = textarea.value.substring(start, end);
-    await fetch('http://127.0.0.1:5000/blogpost/conclusion', {
+    await fetch('https://hackathon-lablab.herokuapp.com/blogpost/conclusion', {
     method: 'POST',
     body: JSON.stringify({
         title:title.value,

@@ -27,7 +27,7 @@ async function generateNormal(){
     var start = textarea.selectionStart;
     var end = textarea.selectionEnd;
     var sel = textarea.value.substring(start, end);
-    await fetch('http://127.0.0.1:5000/contentimprover/content', {
+    await fetch('https://hackathon-lablab.herokuapp.com/contentimprover/content', {
     method: 'POST',
     body: JSON.stringify({
         text:title.value,

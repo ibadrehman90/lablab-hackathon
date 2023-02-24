@@ -17,7 +17,7 @@ const email_body = ref("")
 async function generateIntro(){
     if (title.value && tone.value && sender.value && recepient.value && proposition.value && action.value && descp.value !== '') {
       overlay.value = true
-      await fetch('http://127.0.0.1:5000/coldemail/subject', {
+      await fetch('https://hackathon-lablab.herokuapp.com/coldemail/subject', {
       method: 'POST',
       body: JSON.stringify({
         company: title.value,
@@ -47,7 +47,7 @@ async function generateIntro(){
 }
 
 async function writeCopy(){
-        await fetch('http://127.0.0.1:5000/coldemail/body', {
+        await fetch('https://hackathon-lablab.herokuapp.com/coldemail/body', {
         method: 'POST',
         body: JSON.stringify({
             recepient: recepient.value,

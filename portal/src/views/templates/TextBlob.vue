@@ -19,7 +19,7 @@ import { ref } from "vue";
     }
     if (descp.value) {
       overlay.value = true
-      await fetch('http://127.0.0.1:5000/textblob/content', {
+      await fetch('https://hackathon-lablab.herokuapp.com/textblob/content', {
       method: 'POST',
       body: JSON.stringify({
         topic:descp.value,    
